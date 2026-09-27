@@ -1,0 +1,7 @@
+# Same inference environment as the immutable v0.4.0 release.
+# HTTP serving and contract tests use only Python's standard library.
+torch==2.14.0
+transformers==5.17.0
+safetensors==0.8.0
+numpy==2.4.6
+huggingface_hub==1.33.0

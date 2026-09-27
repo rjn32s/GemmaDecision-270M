@@ -1,5 +1,5 @@
 {
-  "format": "gemmadecision-v4-source-sha256",
+  "format": "gemmadecision-source-sha256",
   "files": {
     "DATA_PROTOCOL.md": {
       "sha256": "d16d2b89920765d2ab5f344359dbbdb7905a796730e021f5cc006d817a2380d5",
@@ -30,8 +30,12 @@
       "bytes": 328
     },
     "README.md": {
-      "sha256": "16a21f93e96413c0790e1f810ca4e4d0fea40eb04eed4a598481a4e9bf201f72",
-      "bytes": 1738
+      "sha256": "b33e1ce45c33f93fe2d60ea49d9d625591651f7f981e7a43cf489073673f734b",
+      "bytes": 2119
+    },
+    "RELEASE.json": {
+      "sha256": "36c21938b254c052449398ee78f53ce3437a7b766bc381faf11759218a3d576d",
+      "bytes": 283
     },
     "RELEASE_ATTRIBUTION_AUDIT.md": {
       "sha256": "aa6a7b9684852ff039bc93854e782761ad6f781c5a30067dd6cc78ebbcac3744",
@@ -48,6 +52,42 @@
     "TRAINING_CURVE.svg": {
       "sha256": "33f79adaf2571584ee366778b1821020b41fd03fc38643f477a94f82a3140bdf",
       "bytes": 28855
+    },
+    "benchmark/EXPOSURE.md": {
+      "sha256": "c71a74b239996723d927a751c75393c823cac5d45d0c7b36b693078e5129be5b",
+      "bytes": 10466
+    },
+    "benchmark/PROTOCOL.json": {
+      "sha256": "1201df79891147b145cfe7533e73f911b53a9dd8f4ea81b29e7e871f36bb7bce",
+      "bytes": 2669
+    },
+    "benchmark/README.md": {
+      "sha256": "f4b8863a655b838ce3ac4fecac2f38e5f1c5a927a43f0911bb3eadd7055ee2be",
+      "bytes": 5636
+    },
+    "benchmark/modal_benchmark.py": {
+      "sha256": "2af8b5621bcfb31ad878cd7260424d25d8b6c9bab9674d9cece920f60d3ee825",
+      "bytes": 9799
+    },
+    "benchmark/requirements-server.txt": {
+      "sha256": "935b2dabb6d699132395bafd5b6519ec057a8a0b458e9a2c85a42845c9e7b670",
+      "bytes": 223
+    },
+    "benchmark/run_public.py": {
+      "sha256": "7eb408d90df341416819295087ae2530d4f0819f7a1a058ad870c5da4715674e",
+      "bytes": 12735
+    },
+    "benchmark/server.py": {
+      "sha256": "36156bb63df0a0facc4ebf658b3ac4b879718e19c5079356dfea8f305c238982",
+      "bytes": 15317
+    },
+    "benchmark/test_run_public.py": {
+      "sha256": "ade0eb3923bacf368dffdedefb3389cff32a636d45e5e6aa3b696a298431f016",
+      "bytes": 6148
+    },
+    "benchmark/test_server.py": {
+      "sha256": "9457d11af294e567a85e5e1840fcba7c748a7b103bf7831ef6ee6cc3bfc4258f",
+      "bytes": 11653
     },
     "evidence/calibration.json": {
       "sha256": "3988b0b74e33ba4ccde8b2761ce6c4c9b3fd5fedf78cf2c52666565a40180c67",
@@ -296,10 +336,6 @@
     "work/build_v4_release.py": {
       "sha256": "d314c14c4334152c577a6141c4d7bed748a846546f41f779dd70d0967f61fa2d",
       "bytes": 38722
-    },
-    "RELEASE.json": {
-      "sha256": "36c21938b254c052449398ee78f53ce3437a7b766bc381faf11759218a3d576d",
-      "bytes": 283
     }
   }
 }
