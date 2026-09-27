@@ -1,0 +1,64 @@
+{
+  "protocol": "gemmadecision-v4-jevbench-public-1",
+  "frozen_at": "2026-09-27T09:39:46.709779+00:00",
+  "model_id": "rajan2k/GemmaDecision-270M",
+  "model_revision": "785d530221c990671f29976902540101bb9c7647",
+  "harness_revision": "d06ee95988da1350eb8ae5511daa0e06bfffe911",
+  "temperature": 4.136820402388508,
+  "temperature_origin": "Previously published project calibration set, 300 BANKING77/MultiNLI cases; no JevBench fitting",
+  "calibration_record_sha256": "3988b0b74e33ba4ccde8b2761ce6c4c9b3fd5fedf78cf2c52666565a40180c67",
+  "probabilities": "softmax over all raw candidate scores divided by fixed temperature; adapter derived",
+  "mapping": "Published CLM schema; choice criterion descriptions, score list levels, noul false/true descriptions mapped to no/yes",
+  "benchmark_source_sha256": {
+    "server.py": "36156bb63df0a0facc4ebf658b3ac4b879718e19c5079356dfea8f305c238982",
+    "run_public.py": "7eb408d90df341416819295087ae2530d4f0819f7a1a058ad870c5da4715674e"
+  },
+  "launcher_sha256": "2af8b5621bcfb31ad878cd7260424d25d8b6c9bab9674d9cece920f60d3ee825",
+  "public_dataset_sha256": {
+    "easy.jsonl": "231df3c2c8e88a1a8c137ebe85de96ba70fabd330849098ac7b3c52c70b7172b",
+    "original.jsonl": "5c2414edb3006b8bfcb70fda433f0f9ca015759433849f8d3104328a1f7c4180",
+    "hard.jsonl": "89e9e6becb33ed88c1de7d42dcc87531b2fb64cfaef4e1986faf7c37b3f80ebb"
+  },
+  "planned_order": [
+    {
+      "tier": "easy",
+      "count": 48
+    },
+    {
+      "tier": "original",
+      "count": 72
+    },
+    {
+      "tier": "hard",
+      "count": 111
+    }
+  ],
+  "planned_n": 231,
+  "serial": true,
+  "retries": 0,
+  "inference_warmup": false,
+  "stop_rules": "Unmodified upstream Runner: 401/403/429 or three consecutive non-422 failures",
+  "hardware": "Modal NVIDIA H100, 2 reserved CPU cores, 32 GiB reserved RAM",
+  "precision": "BF16 encoder, FP32 scalar head; model evaluation mode",
+  "transport": "Loopback HTTP; existing upstream typesafe adapter",
+  "input_limits": {
+    "state_question_tokens": 2048,
+    "candidate_tokens": 768,
+    "candidates_min": 2,
+    "candidates_max": 64
+  },
+  "truncation": false,
+  "per_token_tariff": null,
+  "actual_compute": "Separately reported Modal experiment cost; not inference tariff",
+  "run_compute_reservation_max_usd": 1.8,
+  "inference_fields": [
+    "state",
+    "question.type",
+    "question.instructions",
+    "question.criteria"
+  ],
+  "development_exposure": "Earlier v0.2 public JevBench results viewed; see EXPOSURE.md. No sealed cases accessed.",
+  "no_post_result_tuning": true,
+  "no_official_score_or_rank": true,
+  "benchmark_authorization": "User: ok let's prepoare for bechmark and it's submission"
+}

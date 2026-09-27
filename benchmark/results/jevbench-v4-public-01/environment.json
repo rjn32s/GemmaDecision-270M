@@ -1,0 +1,42 @@
+{
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_memory_bytes": 85017624576,
+  "cpu_reserved_cores": 2,
+  "memory_reserved_mib": 32768,
+  "python": "3.11.12",
+  "torch": "2.14.0+cu130",
+  "cuda_runtime": "13.0",
+  "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+  "precision": "BF16 Gemma encoder, FP32 scalar head",
+  "torch_cpu_threads": 2,
+  "transport": "serial loopback HTTP with unmodified upstream TypeSafeAdapter and Runner",
+  "model_load_to_ready_seconds": 8.521508057999998,
+  "health": {
+    "status": "ready",
+    "model": "rajan2k/GemmaDecision-270M@785d530221c990671f29976902540101bb9c7647",
+    "temperature": 4.136820402388508,
+    "probabilities_source": "softmax_ranking_scores_external_temperature",
+    "limits": {
+      "state_question_tokens": 2048,
+      "candidate_tokens": 768,
+      "candidates_min": 2,
+      "candidates_max": 64,
+      "truncation": false,
+      "max_request_bytes": 2097152
+    },
+    "runtime": {
+      "device": "cuda",
+      "encoder_dtype": "torch.bfloat16",
+      "head_dtype": "torch.float32",
+      "torch_threads": 2,
+      "torch_version": "2.14.0+cu130",
+      "python_version": "3.11.12",
+      "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+      "load_and_verify_s": 8.066469374000002,
+      "gpu_name": "NVIDIA H100 80GB HBM3"
+    }
+  },
+  "cold_inference": "No inference warmup; first benchmark call included in latency",
+  "inference_network": "Local model only; public snapshot downloaded before server startup",
+  "model_revision": "785d530221c990671f29976902540101bb9c7647"
+}

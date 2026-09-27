@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "error": null,
+  "function_seconds": 47.277871850000004,
+  "estimated_function_usd": 0.05646112567814402,
+  "rate_usd_per_second": 0.0011942400000000003,
+  "finished_at": "2026-09-27T09:42:27.461294+00:00",
+  "billing_scope": "Function body GPU+reserved CPU/RAM estimate; excludes startup, storage, transfer and taxes. Not an inference-service tariff."
+}
