@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "software_checks_passed": true,
+  "device": "cpu",
+  "encoder_dtype": "float32",
+  "head_dtype": "float32",
+  "cpu_threads": 2,
+  "network_attempts": 0,
+  "fresh_empty_hf_cache": true,
+  "candidate_permutation_max_error": 0.0,
+  "additional_candidate_max_error": 0.0,
+  "independent_reload_max_error": 0.0,
+  "overlength_state_rejected": true,
+  "overlength_candidate_rejected": true,
+  "score_semantics": "Uncalibrated scalar ranking score; higher is preferred. Not a probability, confidence estimate or score comparable across requests.",
+  "cold_model_load_seconds": 3.203524217000002,
+  "examples": [
+    {
+      "name": "support_routing",
+      "ranking": [
+        {
+          "candidate": "payments",
+          "text": "Payments support: investigate charges, transfers and refunds.",
+          "score": -1.0479958057403564
+        },
+        {
+          "candidate": "technical",
+          "text": "Technical support: investigate app crashes and login errors.",
+          "score": -15.411633491516113
+        },
+        {
+          "candidate": "delivery",
+          "text": "Delivery support: track shipments and missing parcels.",
+          "score": -17.636945724487305
+        }
+      ],
+      "cpu_seconds": 0.5159610990000019,
+      "illustrative_expected_top": "payments",
+      "illustrative_top_matches_expectation": true
+    },
+    {
+      "name": "evidence_relation",
+      "ranking": [
+        {
+          "candidate": "contradicted",
+          "text": "The evidence contradicts the claim.",
+          "score": 4.764087200164795
+        },
+        {
+          "candidate": "unresolved",
+          "text": "The evidence leaves the claim unresolved.",
+          "score": -4.605165004730225
+        },
+        {
+          "candidate": "supported",
+          "text": "The evidence supports the claim.",
+          "score": -7.0850043296813965
+        }
+      ],
+      "cpu_seconds": 0.390821306000003,
+      "illustrative_expected_top": "contradicted",
+      "illustrative_top_matches_expectation": true
+    },
+    {
+      "name": "tool_choice",
+      "ranking": [
+        {
+          "candidate": "weather",
+          "text": "Use the weather tool to retrieve current London weather.",
+          "score": 12.915040969848633
+        },
+        {
+          "candidate": "guess",
+          "text": "Answer with an assumed weather condition without retrieving current information.",
+          "score": 4.777093410491943
+        },
+        {
+          "candidate": "calculator",
+          "text": "Use the calculator to multiply 17 by 23.",
+          "score": -18.364774703979492
+        }
+      ],
+      "cpu_seconds": 0.4403612889999984,
+      "illustrative_expected_top": "weather",
+      "illustrative_top_matches_expectation": true
+    }
+  ],
+  "illustrative_correct": 3,
+  "illustrative_count": 3,
+  "verification_seconds": 11.832310505000002,
+  "latency_scope": "Observed Modal CPU, two threads, these exact short examples; not a Mac or general latency estimate",
+  "quality_claim": "Software checks do not assert correct decisions. These exposed illustrative examples are not a fresh benchmark.",
+  "device_limits": "CPU verified only; MPS and CUDA-to-CPU ranking agreement are not established by this check."
+}

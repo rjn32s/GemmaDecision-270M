@@ -1,0 +1,187 @@
+{
+  "protocol": "gemmadecision-v4-fresh-prompts-1",
+  "status": "ready",
+  "passed": true,
+  "passed_structural": true,
+  "seed": 2704404,
+  "data_code_sha256": "9dbd9c6a73fbcd85dd8bfeb6ca072ac3b5d087712dec903b7aeeab5facbe087a",
+  "data_v3_utility_code_sha256": "2b9aff0a7ab780bb855d8804e7f7f2e3c8c336c5cc7c5db35574d54bb351bd48",
+  "sources": {
+    "banking77": {
+      "repo": "PolyAI/banking77",
+      "revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+      "upstream_revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+      "license": "CC-BY-4.0",
+      "license_url": "https://huggingface.co/datasets/PolyAI/banking77"
+    },
+    "multi_nli": {
+      "repo": "nyu-mll/multi_nli",
+      "revision": "da70db2af9d09693783c3320c4249840212ee221",
+      "license": "OANC permissive terms; fiction excluded",
+      "license_url": "https://cims.nyu.edu/~sbowman/multinli/paper.pdf",
+      "excluded_genres": [
+        "fiction"
+      ],
+      "included_genres": [
+        "government",
+        "slate",
+        "telephone",
+        "travel"
+      ]
+    }
+  },
+  "synthetic_license": "Apache-2.0",
+  "replay_license_provenance": "/experiment/work/decision-v3/data/audit.json",
+  "source_file_sha256": {
+    "/experiment/work/decision-v3/data/downloads/banking77/train.csv": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "/experiment/work/decision-v3/data/downloads/banking77/test.csv": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "/experiment/work/decision-v3/data/downloads/multi_nli/data/train-00000-of-00001.parquet": "1c1de03640b168e410aabfca19e7cc2f3dfcd7f0e126e935674e56fb102c4529"
+  },
+  "prior_input_file_sha256": {
+    "/experiment/work/decision-v3/data/train.jsonl": "22abd9e94673e0de80103432ab9e161c60f4790100df418fd0b2039523f4505b",
+    "/experiment/work/decision-v3/data/development.jsonl": "dc482b1baaf31ad8ad56ceb0596dd5bcdfa85b892a6e9e124efa31ab2b1d19bb",
+    "/experiment/work/decision-v3/data/calibration.jsonl": "dac350c0f18d78254f50de7c8223c4f2c4c5b052a1c5ca8792d88de90f1c0dfe",
+    "/experiment/work/decision-v3/data/final.jsonl": "ad6affcb10e6d08df50a43d922ab8b4f14b502047307af2654fe3627e1e01aa8",
+    "/experiment/work/decision-v2/train.jsonl": "839de652f9ab984277f0730b0f1ec4be2e045dd072a0ecceb3fa88afbcc121a6",
+    "/experiment/work/decision-v2/validation.jsonl": "dfbc7d0722659756824175d98edb24c91ef2facfaffc5a0cfec6bb00ca30d91b",
+    "/experiment/work/decision-v2/test.jsonl": "aca0077cdfcf54d6d1cbd4ee53e8351cdd8ec6dc0ac4a1b4cbc73502e2d8a4e4",
+    "/experiment/work/decision-v2/calibration.jsonl": "6ecd441b12f05c42923327d0e0fc08b92d5fa4298b1722350884369ec3c4ace6",
+    "/experiment/work/decision-v2/texts.jsonl": "08e4272865e9c49ba0278b0229206e60f84c58bb5bfe6ce21729e159b1147a38"
+  },
+  "prior_exposed_group_count": 277907,
+  "prior_exposed_state_hash_count": 346131,
+  "output_hashes": {
+    "calibration.jsonl": "9db35f07cc3176168ef90ce489a8e47b04f2ef2781caf0165e4d3d4f799f24f2",
+    "development.jsonl": "26c7628d09cd1f44d5a77a10130f9e2ede63abc88b286c33c6ad6a9b98436a51",
+    "final.jsonl": "0fe6c43468635a0ee64d519a6c9670df9f3cf1f6daba6492aecb9cdf032fb4e3",
+    "train.jsonl": "89779f75c07987c73f8b5a0db876aa4e5aee687d29e0e4f5cd7e551e3ad45876",
+    "split-manifest.jsonl": "f76c4d588568a51c7102a6acf5defba83943ffa5f8122a4ca1c5694e8d6129f7"
+  },
+  "split_file_sha256": {
+    "calibration.jsonl": "9db35f07cc3176168ef90ce489a8e47b04f2ef2781caf0165e4d3d4f799f24f2",
+    "development.jsonl": "26c7628d09cd1f44d5a77a10130f9e2ede63abc88b286c33c6ad6a9b98436a51",
+    "final.jsonl": "0fe6c43468635a0ee64d519a6c9670df9f3cf1f6daba6492aecb9cdf032fb4e3",
+    "train.jsonl": "89779f75c07987c73f8b5a0db876aa4e5aee687d29e0e4f5cd7e551e3ad45876",
+    "split-manifest.jsonl": "f76c4d588568a51c7102a6acf5defba83943ffa5f8122a4ca1c5694e8d6129f7"
+  },
+  "splits": {
+    "calibration": {
+      "cases": 360,
+      "prompt_groups": 330,
+      "real_primary_prompt_groups": 300,
+      "families": {
+        "intent_routing": 150,
+        "evidence_relation": 150,
+        "rule_compliance": 60
+      },
+      "within_2048_768": 360,
+      "workflow_groups": 73
+    },
+    "development": {
+      "cases": 700,
+      "prompt_groups": 650,
+      "real_primary_prompt_groups": 600,
+      "families": {
+        "rule_compliance": 100,
+        "evidence_relation": 300,
+        "intent_routing": 300
+      },
+      "within_2048_768": 700,
+      "workflow_groups": 78
+    },
+    "final": {
+      "cases": 1400,
+      "prompt_groups": 1300,
+      "real_primary_prompt_groups": 1200,
+      "families": {
+        "evidence_relation": 600,
+        "intent_routing": 600,
+        "rule_compliance": 200
+      },
+      "within_2048_768": 1400,
+      "workflow_groups": 80
+    },
+    "train": {
+      "cases": 21432,
+      "prompt_groups": 20432,
+      "real_primary_prompt_groups": 17999,
+      "families": {
+        "intent_routing": 5999,
+        "evidence_relation": 12000,
+        "retention_agent_webshop": 87,
+        "response_preference": 400,
+        "retention_paq": 300,
+        "rule_compliance": 2000,
+        "retention_agent_db": 85,
+        "retention_when2call": 333,
+        "retention_agent_os": 82,
+        "retention_agent_terminal": 75,
+        "retention_agent_alfworld": 70,
+        "retention_agent_kg": 1
+      },
+      "within_2048_768": 21432,
+      "workflow_groups": 91
+    }
+  },
+  "counts": {
+    "source_cross_split_groups_removed": 7,
+    "excluded_prior_or_duplicate/final/intent_routing": 3,
+    "excluded_prior_or_duplicate/final/evidence_relation": 20,
+    "excluded_prior_or_duplicate/calibration/intent_routing": 1,
+    "near_prior_v3/calibration/intent_routing": 1,
+    "excluded_prior_or_duplicate/calibration/evidence_relation": 4,
+    "excluded_prior_or_duplicate/development/evidence_relation": 6,
+    "excluded_prior_or_duplicate/train/intent_routing": 369,
+    "excluded_prior_or_duplicate/train/evidence_relation": 1195,
+    "training_near_old_holdout_removed": 1,
+    "replay/retention_paq": 300,
+    "replay/response_preference": 400,
+    "replay/agent": 400,
+    "replay/retention_when2call": 333
+  },
+  "real_training_target_counts": {
+    "intent_routing": 6000,
+    "evidence_relation": 12000
+  },
+  "primary_families": [
+    "intent_routing",
+    "evidence_relation"
+  ],
+  "group_disjoint": true,
+  "input_format": "schema_state(state, question) + '\\n\\nCandidate action:\\n' + candidate",
+  "encoder_context_limit": 32768,
+  "old_holdout_labels_used_for_training": false,
+  "all_prior_groups_excluded_from_new_holdouts": true,
+  "prior_holdout_training_conflicts": 0,
+  "new_holdout_prior_exposure_conflicts": 0,
+  "final_labels_opened_for_model_selection": false,
+  "near_duplicate_screen": {
+    "method": "State-only 5-token shingles; bottom-512 sketches, 16 two-hash bands, Jaccard >= 0.85. Candidate retrieval is approximate.",
+    "previous_v3": {
+      "candidate_pairs_checked": 35,
+      "near_rows_removed": 1
+    },
+    "new_holdouts": {
+      "candidate_pairs_checked": 134
+    },
+    "protected_old_holdouts": {
+      "candidate_pairs_checked": 2156,
+      "near_rows_removed": 1
+    },
+    "old_v2_scope": "Exact group and normalized state hashes only; no all-v2 lexical screen.",
+    "synthetic_scope": "Generated pairs remain together; synthetic templates are intentionally correlated and excluded from lexical checks."
+  },
+  "limitations": [
+    "Fresh prompt groups, not unseen domains: all BANKING77 intents and selected NLI genres occurred during v3 development/evaluation.",
+    "Public foundation-model pretraining exposure is unknown; there is no guarantee these public corpora were unseen by Gemma.",
+    "BANKING77 four-way labels use deterministic lexical hard alternatives; this is not 77-way classification or arbitrary tool routing.",
+    "MultiNLI is class balanced and filtered to permissive nonfiction genres; source train supplies a newly reserved prompt-group holdout.",
+    "Approximate lexical checks and exact exclusions do not establish semantic independence; oversized buckets are counted when skipped.",
+    "Synthetic challenge examples are correlated counterfactual pairs from held-out templates, not independent real requests.",
+    "Replay training uses only previous training rows; old v3 final results remain exposed regression evidence, never a fresh benchmark.",
+    "Evaluation includes overlength rows and counts rejections in coverage; only training is filtered by context limits."
+  ],
+  "seconds": 54.480708972,
+  "function_seconds": 65.20182158,
+  "estimated_function_usd": 0.0040242564279176
+}

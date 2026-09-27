@@ -1,0 +1,11 @@
+{
+  "recipe_sha256": "5e05fe098086380b132c5fc90b92ca4f0d30b816feb52b6fdae674f572a8634f",
+  "files": {
+    "outputs/gemma-local/v4/evaluate_v4.py": "c35dafd56a118de184137ba45fc76fce6070b9ca55f6232e110c7e51d3dca2a5",
+    "outputs/gemma-local/v3/joint_deployment.py": "2e5212fe7bf6bd40fc9414c8aa480184996eb2416fafc9e2aee57b183c851c64",
+    "outputs/gemma-local/v2/common.py": "7a41cecc445af13a1b88902920ebdc1cc0e854a4379c243302c4237c29dab307",
+    "outputs/gemma-local/v2/clm_schema.py": "52cec58afbf49ad7b7aa6bdb7e7476ee42bf3fd7a2703d44319dc4b565987335",
+    "outputs/gemma-local/v4/train.py": "b65723d0fbc429d7c3c738717f88af5128f9446943b9578052f8aed046efc365",
+    "outputs/gemma-local/v2/clm_heads.py": "3f3b880e940a47b45879614b140fd873f7de9b13ccb8254b07989af7ea92e093"
+  }
+}

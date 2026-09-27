@@ -1,0 +1,8 @@
+torch==2.14.0
+transformers==5.17.0
+safetensors==0.8.0
+numpy==2.4.6
+huggingface_hub==1.33.0
+pyarrow==25.0.1
+ijson==3.4.0
+modal==1.5.5

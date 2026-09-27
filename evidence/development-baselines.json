@@ -1,0 +1,116 @@
+{
+  "status": "complete",
+  "development_only": true,
+  "identity": {
+    "development_sha256": "26c7628d09cd1f44d5a77a10130f9e2ede63abc88b286c33c6ad6a9b98436a51",
+    "initial_base_files": {
+      "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+      "config.json": "8983343e5bfbf8e336d222a522a1d781443491e9de2d081b8856f8fd26ab6046",
+      "generation_config.json": "5f5e01a065c3a4efb169a97bc13dbe5d62031f40a3e7004323daaaff348ec420",
+      "model.safetensors": "abb58eb73aece5163624090d5383c59cbcdb9e9539ec84cb864f74386c4b21d5",
+      "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+      "tokenizer.json": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+      "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+      "tokenizer_config.json": "94b03056ec5831e9021c3e3fe9db682778c4f2d081c4188f1fcb8b90541cf1cf"
+    },
+    "v3_head_sha256": "fd2733b7cf138dad5d5fdc1e2cd7b007dcbb5558c24cffe53c3cf80abcbd9d42",
+    "source_sha256": {
+      "evaluate_v4.py": "c35dafd56a118de184137ba45fc76fce6070b9ca55f6232e110c7e51d3dca2a5",
+      "joint_deployment.py": "2e5212fe7bf6bd40fc9414c8aa480184996eb2416fafc9e2aee57b183c851c64",
+      "common.py": "7a41cecc445af13a1b88902920ebdc1cc0e854a4379c243302c4237c29dab307",
+      "clm_schema.py": "52cec58afbf49ad7b7aa6bdb7e7476ee42bf3fd7a2703d44319dc4b565987335",
+      "train.py": "b65723d0fbc429d7c3c738717f88af5128f9446943b9578052f8aed046efc365",
+      "clm_heads.py": "3f3b880e940a47b45879614b140fd873f7de9b13ccb8254b07989af7ea92e093"
+    }
+  },
+  "systems": {
+    "gemma_likelihood": {
+      "by_family": {
+        "rule_compliance": {
+          "count": 100,
+          "prompt_groups": 50,
+          "classification_count": 100,
+          "accuracy": 0.5,
+          "coverage": 1.0,
+          "nll_covered": 0.7200260346420798,
+          "brier_covered": 0.5261700128204887,
+          "ordinal_mae_covered": null
+        },
+        "evidence_relation": {
+          "count": 300,
+          "prompt_groups": 300,
+          "classification_count": 300,
+          "accuracy": 0.3333333333333333,
+          "coverage": 1.0,
+          "nll_covered": 1.4029523183465442,
+          "brier_covered": 0.8032772785667902,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 300,
+          "prompt_groups": 300,
+          "classification_count": 300,
+          "accuracy": 0.43333333333333335,
+          "coverage": 1.0,
+          "nll_covered": 1.44637065916081,
+          "brier_covered": 0.7173909935339681,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.3833333333333333,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 700,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    },
+    "v3_frozen_joint": {
+      "by_family": {
+        "rule_compliance": {
+          "count": 100,
+          "prompt_groups": 50,
+          "classification_count": 100,
+          "accuracy": 0.5,
+          "coverage": 1.0,
+          "nll_covered": 0.7515852985475702,
+          "brier_covered": 0.55511716023655,
+          "ordinal_mae_covered": null
+        },
+        "evidence_relation": {
+          "count": 300,
+          "prompt_groups": 300,
+          "classification_count": 300,
+          "accuracy": 0.35333333333333333,
+          "coverage": 1.0,
+          "nll_covered": 1.1055476936795738,
+          "brier_covered": 0.6715932145561091,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 300,
+          "prompt_groups": 300,
+          "classification_count": 300,
+          "accuracy": 0.64,
+          "coverage": 1.0,
+          "nll_covered": 0.8796526788464306,
+          "brier_covered": 0.47492905782428174,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.4966666666666667,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 700,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    }
+  },
+  "final_or_calibration_opened": false,
+  "seconds": 91.84222674899999,
+  "function_seconds": 94.26580863400001,
+  "estimated_function_usd": 0.11257599930306819
+}

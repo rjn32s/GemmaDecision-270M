@@ -1,0 +1,8 @@
+{
+  "version": "v0.4.0",
+  "huggingface_repository": "rajan2k/GemmaDecision-270M",
+  "huggingface_revision": "785d530221c990671f29976902540101bb9c7647",
+  "github_repository": "rjn32s/GemmaDecision-270M",
+  "full_weights_on_huggingface": true,
+  "benchmark_issue_submitted": false
+}

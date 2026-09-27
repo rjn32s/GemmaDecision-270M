@@ -1,0 +1,466 @@
+{
+  "status": "complete",
+  "scope": "Fresh known-domain prompts: four-way banking-intent selection and three-way NLI; no arbitrary routing, unseen-intent or JEV-parity claim",
+  "count": 1400,
+  "primary_prompt_groups": 1200,
+  "raw": {
+    "selected": {
+      "by_family": {
+        "evidence_relation": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.78,
+          "coverage": 1.0,
+          "nll_covered": 1.1791697084173767,
+          "brier_covered": 0.3867270065469624,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.965,
+          "coverage": 1.0,
+          "nll_covered": 0.23505632644650432,
+          "brier_covered": 0.06172058374592459,
+          "ordinal_mae_covered": null
+        },
+        "rule_compliance": {
+          "count": 200,
+          "prompt_groups": 100,
+          "classification_count": 200,
+          "accuracy": 0.93,
+          "coverage": 1.0,
+          "nll_covered": 0.9361946639020517,
+          "brier_covered": 0.13570544264821713,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.8725,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 1400,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    },
+    "gemma_likelihood": {
+      "by_family": {
+        "evidence_relation": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.3333333333333333,
+          "coverage": 1.0,
+          "nll_covered": 1.3822317720442276,
+          "brier_covered": 0.8022475881211879,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.4716666666666667,
+          "coverage": 1.0,
+          "nll_covered": 1.43350520897349,
+          "brier_covered": 0.7044739580071877,
+          "ordinal_mae_covered": null
+        },
+        "rule_compliance": {
+          "count": 200,
+          "prompt_groups": 100,
+          "classification_count": 200,
+          "accuracy": 0.5,
+          "coverage": 1.0,
+          "nll_covered": 0.7167218462725677,
+          "brier_covered": 0.5229471464873369,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.40249999999999997,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 1400,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    },
+    "v3_frozen_joint": {
+      "by_family": {
+        "evidence_relation": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.36666666666666664,
+          "coverage": 1.0,
+          "nll_covered": 1.0951573973589928,
+          "brier_covered": 0.664375965028854,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.6483333333333333,
+          "coverage": 1.0,
+          "nll_covered": 0.8572370203811834,
+          "brier_covered": 0.4690036566756011,
+          "ordinal_mae_covered": null
+        },
+        "rule_compliance": {
+          "count": 200,
+          "prompt_groups": 100,
+          "classification_count": 200,
+          "accuracy": 0.5,
+          "coverage": 1.0,
+          "nll_covered": 0.7307119100184772,
+          "brier_covered": 0.535895558029788,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.5075,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 1400,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    }
+  },
+  "calibrated": {
+    "selected": {
+      "by_family": {
+        "evidence_relation": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.78,
+          "coverage": 1.0,
+          "nll_covered": 0.5705606595965139,
+          "brier_covered": 0.3205522987996962,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.965,
+          "coverage": 1.0,
+          "nll_covered": 0.11673455354067577,
+          "brier_covered": 0.05942854601433663,
+          "ordinal_mae_covered": null
+        },
+        "rule_compliance": {
+          "count": 200,
+          "prompt_groups": 100,
+          "classification_count": 200,
+          "accuracy": 0.93,
+          "coverage": 1.0,
+          "nll_covered": 0.29623472240539184,
+          "brier_covered": 0.12713669089646581,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.8725,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 1400,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    },
+    "gemma_likelihood": {
+      "by_family": {
+        "evidence_relation": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.3333333333333333,
+          "coverage": 1.0,
+          "nll_covered": 1.111646677904338,
+          "brier_covered": 0.6747033379549938,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.4716666666666667,
+          "coverage": 1.0,
+          "nll_covered": 1.2909164169703031,
+          "brier_covered": 0.6986528710460008,
+          "ordinal_mae_covered": null
+        },
+        "rule_compliance": {
+          "count": 200,
+          "prompt_groups": 100,
+          "classification_count": 200,
+          "accuracy": 0.5,
+          "coverage": 1.0,
+          "nll_covered": 0.6942367581559953,
+          "brier_covered": 0.5010885427765206,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.40249999999999997,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 1400,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    },
+    "v3_frozen_joint": {
+      "by_family": {
+        "evidence_relation": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.36666666666666664,
+          "coverage": 1.0,
+          "nll_covered": 1.094676925199931,
+          "brier_covered": 0.6640263862854858,
+          "ordinal_mae_covered": null
+        },
+        "intent_routing": {
+          "count": 600,
+          "prompt_groups": 600,
+          "classification_count": 600,
+          "accuracy": 0.6483333333333333,
+          "coverage": 1.0,
+          "nll_covered": 0.8344784718982489,
+          "brier_covered": 0.4584059423772335,
+          "ordinal_mae_covered": null
+        },
+        "rule_compliance": {
+          "count": 200,
+          "prompt_groups": 100,
+          "classification_count": 200,
+          "accuracy": 0.5,
+          "coverage": 1.0,
+          "nll_covered": 0.7111337726950828,
+          "brier_covered": 0.5175805059090135,
+          "ordinal_mae_covered": null
+        }
+      },
+      "primary_macro": 0.5075,
+      "primary_families": [
+        "intent_routing",
+        "evidence_relation"
+      ],
+      "coverage": 1.0,
+      "count": 1400,
+      "accuracy_policy": "Equal primary-family mean; failed cases receive zero; exact predicted ties average gold credit"
+    }
+  },
+  "paired_uncertainty": {
+    "replicates": 1500,
+    "seed": 2704905,
+    "by_family": {
+      "intent_routing": {
+        "clusters": 600,
+        "point_accuracy": {
+          "selected": 0.965,
+          "gemma_likelihood": 0.4716666666666667,
+          "v3_frozen_joint": 0.6483333333333333
+        },
+        "selected_accuracy_ci95": [
+          0.95,
+          0.9783333333333334
+        ],
+        "versus_each_baseline": {
+          "gemma_likelihood": {
+            "delta": 0.4933333333333333,
+            "ci95": [
+              0.45166666666666666,
+              0.5316666666666667
+            ]
+          },
+          "v3_frozen_joint": {
+            "delta": 0.31666666666666665,
+            "ci95": [
+              0.2783333333333333,
+              0.3566666666666667
+            ]
+          }
+        },
+        "versus_stronger_baseline": {
+          "delta": 0.31666666666666665,
+          "ci95": [
+            0.2783333333333333,
+            0.3566666666666667
+          ]
+        }
+      },
+      "evidence_relation": {
+        "clusters": 600,
+        "point_accuracy": {
+          "selected": 0.78,
+          "gemma_likelihood": 0.3333333333333333,
+          "v3_frozen_joint": 0.36666666666666664
+        },
+        "selected_accuracy_ci95": [
+          0.7466666666666667,
+          0.8133333333333334
+        ],
+        "versus_each_baseline": {
+          "gemma_likelihood": {
+            "delta": 0.4466666666666667,
+            "ci95": [
+              0.39999999999999997,
+              0.495
+            ]
+          },
+          "v3_frozen_joint": {
+            "delta": 0.4133333333333334,
+            "ci95": [
+              0.36,
+              0.4683333333333333
+            ]
+          }
+        },
+        "versus_stronger_baseline": {
+          "delta": 0.4133333333333334,
+          "ci95": [
+            0.36,
+            0.46
+          ]
+        }
+      }
+    },
+    "point_macro": {
+      "selected": 0.8725,
+      "gemma_likelihood": 0.40249999999999997,
+      "v3_frozen_joint": 0.5075
+    },
+    "versus_each_baseline": {
+      "gemma_likelihood": {
+        "delta": 0.4700000000000001,
+        "ci95": [
+          0.43833333333333335,
+          0.5008333333333334
+        ]
+      },
+      "v3_frozen_joint": {
+        "delta": 0.3650000000000001,
+        "ci95": [
+          0.3320625000000001,
+          0.3983333333333334
+        ]
+      }
+    },
+    "versus_stronger_baseline": {
+      "delta": 0.3650000000000001,
+      "ci95": [
+        0.3320625000000001,
+        0.3983333333333334
+      ]
+    },
+    "method": "Paired prompt-group bootstrap, stratified by primary family; stronger baseline recomputed per replicate",
+    "scope": "Primary real tasks only; synthetic challenge excluded from macro and bootstrap"
+  },
+  "release_criteria": {
+    "intent_routing": {
+      "qualified": true,
+      "checks": {
+        "accuracy_target_met": true,
+        "coverage_target_met": true,
+        "positive_paired_improvement": true
+      },
+      "target": 0.85,
+      "accuracy": 0.965
+    },
+    "evidence_relation": {
+      "qualified": true,
+      "checks": {
+        "accuracy_target_met": true,
+        "coverage_target_met": true,
+        "positive_paired_improvement": true
+      },
+      "target": 0.7,
+      "accuracy": 0.78
+    }
+  },
+  "qualified_capabilities": [
+    "intent_routing",
+    "evidence_relation"
+  ],
+  "release_status": "targets_met",
+  "synthetic_challenge": {
+    "selected": {
+      "rule_compliance": {
+        "count": 200,
+        "prompt_groups": 100,
+        "classification_count": 200,
+        "accuracy": 0.93,
+        "coverage": 1.0,
+        "nll_covered": 0.9361946639020517,
+        "brier_covered": 0.13570544264821713,
+        "ordinal_mae_covered": null
+      }
+    },
+    "gemma_likelihood": {
+      "rule_compliance": {
+        "count": 200,
+        "prompt_groups": 100,
+        "classification_count": 200,
+        "accuracy": 0.5,
+        "coverage": 1.0,
+        "nll_covered": 0.7167218462725677,
+        "brier_covered": 0.5229471464873369,
+        "ordinal_mae_covered": null
+      }
+    },
+    "v3_frozen_joint": {
+      "rule_compliance": {
+        "count": 200,
+        "prompt_groups": 100,
+        "classification_count": 200,
+        "accuracy": 0.5,
+        "coverage": 1.0,
+        "nll_covered": 0.7307119100184772,
+        "brier_covered": 0.535895558029788,
+        "ordinal_mae_covered": null
+      }
+    }
+  },
+  "repeatability_established": false,
+  "seeds": [
+    2704206
+  ],
+  "publication_authorized": true,
+  "benchmark_issue_submission_authorized": false,
+  "limitations": [
+    "Fresh prompts in previously seen source domains, not unseen intents or unseen domains",
+    "BANKING77 uses four supplied choices with lexical hard alternatives; not 77-way classification or arbitrary tool routing",
+    "Evidence relation is a class-balanced filtered MultiNLI task, not general evidence verification",
+    "Public pretraining overlap is unknown",
+    "Synthetic challenge is reported separately",
+    "Targets are descriptive release criteria, not guarantees on arbitrary user requests"
+  ],
+  "identity": {
+    "protocol": "gemmadecision-v4-fresh-prompts-1",
+    "recipe_sha256": "5e05fe098086380b132c5fc90b92ca4f0d30b816feb52b6fdae674f572a8634f"
+  },
+  "calibration_sha256": "3988b0b74e33ba4ccde8b2761ce6c4c9b3fd5fedf78cf2c52666565a40180c67",
+  "seconds": 457.316595309,
+  "outcomes_by_status": {
+    "selected": {
+      "ok": 1400
+    },
+    "gemma_likelihood": {
+      "ok": 1400
+    },
+    "v3_frozen_joint": {
+      "ok": 1400
+    }
+  },
+  "function_seconds": 460.190802431,
+  "estimated_function_usd": 0.5495782638951976
+}

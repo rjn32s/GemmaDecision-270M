@@ -1,0 +1,103 @@
+{
+  "format": "gemmadecision-v4-sha256-v1",
+  "files": {
+    "added_tokens.json": {
+      "sha256": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+      "bytes": 35,
+      "origin": "selected_full_tuning_export"
+    },
+    "config.json": {
+      "sha256": "c1c64396b2939c76f0fa091aa07815b6e6f5ac1a60bfe3878993f0f575dd3ff3",
+      "bytes": 1494,
+      "origin": "selected_full_tuning_export"
+    },
+    "model.safetensors": {
+      "sha256": "d7a3e291bfdfa7cd85b33a8a99ef81a4a7d3192e46c77253f3daf14dfd7d6b95",
+      "bytes": 536221640,
+      "origin": "selected_full_tuning_export"
+    },
+    "special_tokens_map.json": {
+      "sha256": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+      "bytes": 662,
+      "origin": "selected_full_tuning_export"
+    },
+    "tokenizer.json": {
+      "sha256": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+      "bytes": 33384570,
+      "origin": "selected_full_tuning_export"
+    },
+    "tokenizer.model": {
+      "sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+      "bytes": 4689074,
+      "origin": "selected_full_tuning_export"
+    },
+    "tokenizer_config.json": {
+      "sha256": "94b03056ec5831e9021c3e3fe9db682778c4f2d081c4188f1fcb8b90541cf1cf",
+      "bytes": 1155375,
+      "origin": "selected_full_tuning_export"
+    },
+    "joint_head.safetensors": {
+      "sha256": "72ec4e7d1f0908ad684eeae250f0f70128aa4342b46174bf92a3c9851c5dd965",
+      "bytes": 1320372,
+      "origin": "selected_full_tuning_head"
+    },
+    "joint_deployment.py": {
+      "sha256": "2e5212fe7bf6bd40fc9414c8aa480184996eb2416fafc9e2aee57b183c851c64",
+      "bytes": 8938,
+      "origin": "shared_offline_serving_source"
+    },
+    "common.py": {
+      "sha256": "7a41cecc445af13a1b88902920ebdc1cc0e854a4379c243302c4237c29dab307",
+      "bytes": 3512,
+      "origin": "shared_offline_serving_source"
+    },
+    "clm_schema.py": {
+      "sha256": "52cec58afbf49ad7b7aa6bdb7e7476ee42bf3fd7a2703d44319dc4b565987335",
+      "bytes": 6894,
+      "origin": "shared_offline_serving_source"
+    },
+    "clm_heads.py": {
+      "sha256": "3f3b880e940a47b45879614b140fd873f7de9b13ccb8254b07989af7ea92e093",
+      "bytes": 7547,
+      "origin": "shared_offline_serving_source"
+    },
+    "evaluation.json": {
+      "sha256": "ceef3b6eddc6b966efa6161d0663f6039c6ec0a0b83956fab7b3be662deb24e1",
+      "bytes": 13899,
+      "origin": "aggregate_fresh_evaluation_report"
+    },
+    "joint_config.json": {
+      "sha256": "d48f2b5ad5fbea6a3d6723017a6f6a114260a331f0b917b8008de14501091533",
+      "bytes": 992,
+      "origin": "package_metadata"
+    },
+    "base-provenance.json": {
+      "sha256": "cf8e3b60ef54bca93130e96dc08c751c7616fcb79edb3ebc007ef96a309aa55d",
+      "bytes": 3348,
+      "origin": "package_metadata"
+    },
+    "verification-examples.json": {
+      "sha256": "49235f6dc49b0d82a01fc6a25b6d8eb9face5c076675989337d40423bd951e4a",
+      "bytes": 1650,
+      "origin": "package_metadata"
+    },
+    "example_request.json": {
+      "sha256": "b60ef12c0a369b6b7593df2caacde7bde476712f4ef43c73a4a95c6c4a40e920",
+      "bytes": 458,
+      "origin": "package_metadata"
+    },
+    "README.md": {
+      "sha256": "a91eb7fb487978a50393997f5d5eae23256bde2a688fb933e3498967d0c950c2",
+      "bytes": 1211,
+      "origin": "usage_documentation"
+    },
+    "offline-check.json": {
+      "sha256": "34733a5df6f07d7a79d9d597ed4daad083cba57826391d4ec8da05987d2a4e5a",
+      "bytes": 3255,
+      "origin": "cpu_verification_report"
+    }
+  },
+  "base_weights_modified": true,
+  "full_modified_encoder_required": true,
+  "assembly": "Download every listed file, including the new model.safetensors, and verify hashes."
+}

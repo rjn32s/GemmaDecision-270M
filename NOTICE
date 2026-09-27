@@ -1,0 +1,3 @@
+Original project and vendored CLM code are Apache-2.0.
+CLM helper source: Contrastive-LM/CLM revision bb42c6c5bf914fd449bed2f6ca65be80602cb1f7.
+No model weights or raw datasets are included in this source repository. The separately distributed Gemma derivative is governed by its Gemma terms and notices, not this code license.

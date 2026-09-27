@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "recommended_gpu_for_training_pilot": "H100",
+  "profiles": {
+    "H100": {
+      "actual_device": "NVIDIA H100 80GB HBM3",
+      "tokens_per_second": 79828.10833988297,
+      "usd_per_million_nonpadding_training_tokens": 0.014960144049954207,
+      "usd_per_hour": 4.299264,
+      "measured_updates": 9,
+      "measured_seconds": 1.6110114929999924,
+      "peak_allocated_vram_gib": 44.287843227386475,
+      "function_estimate_usd": 0.03925284287630592,
+      "tier_median_seconds": {
+        "short": 0.057426579999997784,
+        "medium": 0.08475612200000171,
+        "long": 0.39095617199999566
+      }
+    },
+    "A100-80GB": {
+      "actual_device": "NVIDIA A100-SXM4-80GB",
+      "tokens_per_second": 29255.17781808414,
+      "usd_per_million_nonpadding_training_tokens": 0.027046152476670082,
+      "usd_per_hour": 2.848464,
+      "measured_updates": 9,
+      "measured_seconds": 4.395939781999999,
+      "peak_allocated_vram_gib": 44.21902132034302,
+      "function_estimate_usd": 0.03619449264277132,
+      "tier_median_seconds": {
+        "short": 0.11695629500000138,
+        "medium": 0.1920822569999956,
+        "long": 1.1595830850000013
+      }
+    }
+  },
+  "h100_speedup_versus_a100_80gb": 2.728683067191514,
+  "h100_required_speedup_for_equal_cost_versus_a100_80gb": 1.5093271320964563,
+  "h100_cost_ratio_versus_a100_80gb": 0.5531339092633888,
+  "failed_workloads": {
+    "L40S": {
+      "failure": "cuda_out_of_memory",
+      "detail": "CUDA out of memory. Tried to allocate 146.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 51.38 MiB is free. Process 1 has 44.33 GiB memory in use. Of the allocated memory 42.58 GiB is allocated by PyTorch, and 1.24 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimi",
+      "function_estimate_usd": 0.022036827624320035
+    }
+  },
+  "workload_sha256": "d462403ca3e29c9b7ad5fedb56e7cb324e52e0b9df54c8ad46ec3f9b21e3510a",
+  "scope": "Three length-tier batches, three measured repeats each, full-backbone updates. Recheck on the actual next-round data mixture. This is hardware throughput, not a quality comparison.",
+  "main_training_started": false,
+  "profiling_checkpoints_retained": false,
+  "publication_on_hold": true
+}

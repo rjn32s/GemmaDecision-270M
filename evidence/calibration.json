@@ -1,0 +1,51 @@
+{
+  "identity_sha256": "f273c42c0409c6cace1f8e0d0187a6e0efc5871edb960b86cffc944d81ac70cd",
+  "fit_partition": "calibration",
+  "systems": {
+    "selected": {
+      "temperature": 4.136820402388508,
+      "equal_primary_family_nll": 0.38491955291059243,
+      "fit_partition": "calibration",
+      "covered_by_family": {
+        "intent_routing": 150,
+        "evidence_relation": 150
+      },
+      "grid": {
+        "minimum": 0.1,
+        "maximum": 10.0,
+        "points": 121
+      },
+      "changes_ranking": false
+    },
+    "gemma_likelihood": {
+      "temperature": 4.823178482239307,
+      "equal_primary_family_nll": 1.2151900778221876,
+      "fit_partition": "calibration",
+      "covered_by_family": {
+        "intent_routing": 150,
+        "evidence_relation": 150
+      },
+      "grid": {
+        "minimum": 0.1,
+        "maximum": 10.0,
+        "points": 121
+      },
+      "changes_ranking": false
+    },
+    "v3_frozen_joint": {
+      "temperature": 1.412537544622754,
+      "equal_primary_family_nll": 0.9773800194832356,
+      "fit_partition": "calibration",
+      "covered_by_family": {
+        "intent_routing": 150,
+        "evidence_relation": 150
+      },
+      "grid": {
+        "minimum": 0.1,
+        "maximum": 10.0,
+        "points": 121
+      },
+      "changes_ranking": false
+    }
+  }
+}

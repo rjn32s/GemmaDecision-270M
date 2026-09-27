@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "protocol": "gemmadecision-v4-fresh-prompts-1",
+  "selected": {
+    "checkpoint_dir": "train/best",
+    "files": {
+      "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+      "config.json": "c1c64396b2939c76f0fa091aa07815b6e6f5ac1a60bfe3878993f0f575dd3ff3",
+      "joint_config.json": "56f3a4718ac6282d0f0114bb477f80ba935d43df3f6279c70090ec91b51ef55c",
+      "joint_head.safetensors": "72ec4e7d1f0908ad684eeae250f0f70128aa4342b46174bf92a3c9851c5dd965",
+      "model.safetensors": "d7a3e291bfdfa7cd85b33a8a99ef81a4a7d3192e46c77253f3daf14dfd7d6b95",
+      "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+      "tokenizer.json": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+      "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+      "tokenizer_config.json": "94b03056ec5831e9021c3e3fe9db682778c4f2d081c4188f1fcb8b90541cf1cf"
+    },
+    "head_file": "joint_head.safetensors",
+    "head_config": {
+      "hidden": 640,
+      "width": 512
+    },
+    "base_weights_modified": true
+  },
+  "base_model": "google/gemma-3-270m",
+  "base_revision": "9b0cfec892e2bc2afd938c98eabe4e4a7b1e0ca1",
+  "initial_base_files": {
+    "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "config.json": "8983343e5bfbf8e336d222a522a1d781443491e9de2d081b8856f8fd26ab6046",
+    "generation_config.json": "5f5e01a065c3a4efb169a97bc13dbe5d62031f40a3e7004323daaaff348ec420",
+    "model.safetensors": "abb58eb73aece5163624090d5383c59cbcdb9e9539ec84cb864f74386c4b21d5",
+    "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+    "tokenizer.json": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+    "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+    "tokenizer_config.json": "94b03056ec5831e9021c3e3fe9db682778c4f2d081c4188f1fcb8b90541cf1cf"
+  },
+  "v3_head_sha256": "fd2733b7cf138dad5d5fdc1e2cd7b007dcbb5558c24cffe53c3cf80abcbd9d42",
+  "data_sha256": {
+    "train.jsonl": "89779f75c07987c73f8b5a0db876aa4e5aee687d29e0e4f5cd7e551e3ad45876",
+    "development.jsonl": "26c7628d09cd1f44d5a77a10130f9e2ede63abc88b286c33c6ad6a9b98436a51",
+    "calibration.jsonl": "9db35f07cc3176168ef90ce489a8e47b04f2ef2781caf0165e4d3d4f799f24f2",
+    "final.jsonl": "0fe6c43468635a0ee64d519a6c9670df9f3cf1f6daba6492aecb9cdf032fb4e3"
+  },
+  "sources_sha256": {
+    "evaluate_v4.py": "c35dafd56a118de184137ba45fc76fce6070b9ca55f6232e110c7e51d3dca2a5",
+    "joint_deployment.py": "2e5212fe7bf6bd40fc9414c8aa480184996eb2416fafc9e2aee57b183c851c64",
+    "common.py": "7a41cecc445af13a1b88902920ebdc1cc0e854a4379c243302c4237c29dab307",
+    "clm_schema.py": "52cec58afbf49ad7b7aa6bdb7e7476ee42bf3fd7a2703d44319dc4b565987335",
+    "train.py": "b65723d0fbc429d7c3c738717f88af5128f9446943b9578052f8aed046efc365",
+    "clm_heads.py": "3f3b880e940a47b45879614b140fd873f7de9b13ccb8254b07989af7ea92e093"
+  },
+  "training_report": "train/metrics.json",
+  "training_report_sha256": "b8e034e0a5b18defd52adf8a50ab06b499fca0a0f0b2a1bbb57fd47b16afbf80",
+  "selection_rationale": "Development-selected full-backbone joint Gemma270M, user-authorized final publication round.",
+  "seeds": [
+    2704206
+  ],
+  "repeatability_established": false,
+  "limits": {
+    "state": 2048,
+    "candidate": 768
+  },
+  "primary_families": [
+    "intent_routing",
+    "evidence_relation"
+  ],
+  "release_targets": {
+    "intent_routing": 0.85,
+    "evidence_relation": 0.7,
+    "minimum_primary_coverage": 0.99,
+    "require_positive_paired_ci": true
+  },
+  "scope": "Fresh known-domain prompts: four-way banking-intent selection and three-way NLI; no arbitrary routing, unseen-intent or JEV-parity claim",
+  "publication_authorized": true,
+  "benchmark_issue_submission_authorized": false,
+  "data_evidence_sha256": {
+    "audit.json": "1f50966dd139c6161f8088670034635f16b0c92b4003cadce67bd1acccb7c3b1"
+  }
+}
